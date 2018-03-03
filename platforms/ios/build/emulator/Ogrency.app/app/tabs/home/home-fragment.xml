@@ -1,0 +1,25 @@
+<!--
+This is the component view that represents the 'Home' tab.
+Feel free to customize layouts and components to change how the tab view looks.
+-->
+<GridLayout class="page-content" loaded="onLoaded">
+
+
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    class="page bg"
+    loaded="pageLoaded">
+    <ListView id="listview" items="{{ items }}" class="list-group">
+        <ListView.itemTemplate>
+            <StackLayout class="list-group-item" id="{{ id }}" tap="showPost">
+
+               <Image src="https://www.ogrency.com/wp-content/uploads/2018/03/arzum-indirimi.jpg" stretch="aspectFit" class="page-content"></Image>
+                    <Label text="{{ title.rendered }}" textWrap="true" class="wp-subtitle" />
+
+
+                </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+
+</Page>
+</GridLayout>
